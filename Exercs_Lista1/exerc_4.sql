@@ -14,7 +14,7 @@ USE exerc_4;
 
 CREATE TABLE aluno (
     idAluno INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(150)
+    nomeAluno VARCHAR(150)
 );
 
 CREATE TABLE curso (
