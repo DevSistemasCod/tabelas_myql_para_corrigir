@@ -17,7 +17,7 @@ USE exerc_2;
 CREATE TABLE professor (
     idProfessor INT AUTO_INCREMENT PRIMARY KEY,
     nomeProfessor VARCHAR(3),
-    dataAdmissao DATETIME NOT NULL,
+    dataAdmissao DATETIME NOT NULL
 );
 
 CREATE TABLE disciplina (
