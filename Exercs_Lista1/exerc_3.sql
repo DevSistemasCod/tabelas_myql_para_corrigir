@@ -1,6 +1,5 @@
 -- 3. Fornecedor
 -- Tabela original: (CNPJ, nome_fantasia, razao_social, endereco)
-
 -- Problemas: "endereço" pode ter vários atributos (rua, número, cidade, CEP).
 
 -- Solução:
@@ -11,18 +10,18 @@ CREATE DATABASE exerc_3;
 USE exerc_3;
 
 CREATE TABLE fornecedor (
-    cnpj INT PRIMARY KEY,
+    cnpjFornecedor INT PRIMARY KEY,
     nomeFantasia VARCHAR(2),
     razaoSocial VARCHAR(250) NOT NULL
 );
 
 CREATE TABLE endereco (
     idEndereco INT AUTO_INCREMENT PRIMARY KEY,
-    cnpj INT,
-    rua VARCHAR(150),
-    numero VARCHAR(100),
-    cidade VARCHAR(3),
-    estado VARCHAR(100),
-    cep INT,
-    FOREIGN KEY (cnpj) REFERENCES fornecedor(cnpj)
+    cnpjEndereco INT,
+    ruaEndereco VARCHAR(150),
+    numeroEndereco VARCHAR(100),
+    cidadeEndereco VARCHAR(3),
+    estadoEndereco VARCHAR(100),
+    cepEndereco INT,
+    FOREIGN KEY (cnpjEndereco) REFERENCES fornecedor(cnpjFornecedor)
 );
