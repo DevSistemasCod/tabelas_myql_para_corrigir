@@ -1,9 +1,7 @@
 
 -- 3. Fornecedor_Produto
-
 -- Tabela original: (id_fornecedor, id_produto, nome_fornecedor, cidade, nome_produto, preco_produto)
 -- Problemas:
-
 -- Nome_fornecedor e cidade pertencem ao fornecedor.
 -- Nome_produto e preco_produto pertencem ao produto.
 
