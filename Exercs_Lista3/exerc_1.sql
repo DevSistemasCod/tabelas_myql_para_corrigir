@@ -24,5 +24,5 @@ CREATE TABLE funcionario (
     idFuncionario INT AUTO_INCREMENT PRIMARY KEY,
     nomeFuncionario VARCHAR(2) NOT NULL,
     idDepartamento INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES departamento(id_departamento)
+    FOREIGN KEY (idDepartamento) REFERENCES departamento(idDepartamento)
 );
