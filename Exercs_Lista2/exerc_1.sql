@@ -34,7 +34,7 @@ CREATE TABLE venda (
 CREATE TABLE vendaProduto (
     idVenda INT,
     idProduto INT,
-    preco_vendido FLOAT NOT NULL,
+    precoVendido FLOAT NOT NULL,
     PRIMARY KEY (idVenda, idProduto),
     FOREIGN KEY (idVenda) REFERENCES venda(idVenda),
     FOREIGN KEY (idProduto) REFERENCES produto(idProduto)
