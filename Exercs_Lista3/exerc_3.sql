@@ -12,8 +12,8 @@
 -- Criar livro_autor.
 
 
-CREATE DATABASE exemplo10;
-USE exemplo10;
+CREATE DATABASE exemplo3;
+USE exemplo3;
 
 CREATE TABLE editora (
     idEditora INT AUTO_INCREMENT PRIMARY KEY,
